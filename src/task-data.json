@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "title": "zrobić zakupy",
+        "details": "trzeba kupić chleb, szynkę i ser",
+        "expiry_date": "30-03-2026",
+        "completion": "wykonane",
+        "rating": 9
+    },
+    {
+        "id": 1,
+        "title": "zmyć naczynia",
+        "details": "trzeba włączyć zmywarkę",
+        "expiry_date": "30-03-2026",
+        "completion": "niewykonane",
+        "rating": 1
+    },
+    {
+        "id": 2,
+        "title": "zrobić pranie",
+        "details": "włącz pralke",
+        "expiry_date": "30-02-2026",
+        "completion": "po terminie",
+        "rating": 3
+    }
+]
