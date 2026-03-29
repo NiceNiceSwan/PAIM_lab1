@@ -1,14 +1,12 @@
-import React, {useContext} from "react";
+import {useContext} from "react";
 import Task from "../Task";
 import{TaskContext} from "../..";
-import {useTasks} from "../task-hooks";
 
 
 export default function ColorList() {
 
     const {tasks} = useContext(TaskContext);
     console.log("ColorList tasks = ", {tasks})
-    //const {tasks} = useTasks();
 
     if(!tasks.length) return <div>Brak kolorów</div>;
     return (

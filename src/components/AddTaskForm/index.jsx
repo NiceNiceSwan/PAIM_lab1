@@ -1,6 +1,4 @@
-import React, {useContext}from 'react';
 import {useInput} from '../hooks';
-import { TaskContext } from '../..';
 import {useTasks} from "../task-hooks";
 
 export default function AddtaskForm () {
@@ -9,7 +7,6 @@ export default function AddtaskForm () {
     const [expiryProps, resetExpiry] = useInput("");
     const [completionProps, resetCompletion] = useInput("");
     const [ratingProps, resetRating] = useInput(0);
-    // const {addTask} = useContext(TaskContext);
     const {addTask} = useTasks();
 
     const submit = event => {
