@@ -29,7 +29,7 @@ export default function AddtaskForm () {
             <input {...detailProps} type="textarea" placeholder = "Szczegóły..." required />
             <input {...expiryProps} type="date" required />
             <input {...completionProps} type="text" placeholder = "Status..." required />
-            <input {...ratingProps} type="number" placeholder = "Trudność..." required />
+            <input {...ratingProps} type="number" placeholder = "Trudność..." min={0} max={10} required />
             <button>DODAJ</button> 
         </form>
     )

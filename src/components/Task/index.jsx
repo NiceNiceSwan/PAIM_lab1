@@ -9,9 +9,8 @@ export default function Task({id, title, details, expiry_date, completion, ratin
     const {rateTask, removeTask, setTaskCompletion} = useTasks();
 return (
     <section>
-        <h1>{title}</h1>
-        <TaskIcon completion = {completion} />
-        <button onClick={()=>removeTask(id)} disabled={completion !== "po terminie" && completion !== "wykonane"}>X</button><br/>
+        <h1><TaskIcon completion = {completion} /> {title}</h1>
+        <button onClick={()=>removeTask(id)} disabled={completion !== "po terminie" && completion !== "wykonane"}>Usuń</button><br/>
         <button onClick={()=>setTaskCompletion(id, completion)}>Zmień status</button><br/>
         {/* <div style={{height:50, backgroundTask:task}} /> */}
         {details}<br/>
