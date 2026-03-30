@@ -12,7 +12,6 @@ return (
         <h1><TaskIcon completion = {completion} /> {title}</h1>
         <button onClick={()=>removeTask(id)} disabled={completion !== "po terminie" && completion !== "wykonane"}>Usuń</button><br/>
         <button onClick={()=>setTaskCompletion(id, completion)}>Zmień status</button><br/>
-        {/* <div style={{height:50, backgroundTask:task}} /> */}
         {details}<br/>
         {expiry_date}<br/>
         {completion}<br/>

@@ -3,12 +3,11 @@ import Task from "../Task";
 import{TaskContext} from "../..";
 
 
-export default function ColorList() {
+export default function TaskList() {
 
     const {tasks} = useContext(TaskContext);
-    console.log("ColorList tasks = ", {tasks})
 
-    if(!tasks.length) return <div>Brak kolorów</div>;
+    if(!tasks.length) return <div>Brak zadań</div>;
     return (
         <div className = "task-list">
             {

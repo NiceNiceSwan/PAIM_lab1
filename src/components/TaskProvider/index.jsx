@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import taskData from "../../task-data.json"
 import {v4} from "uuid";
 import {TaskContext} from "../..";
