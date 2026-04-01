@@ -6,7 +6,7 @@ import {TaskContext} from "../..";
 export default function TaskProvider({children}) {
     const [tasks, setTasks] = useState(taskData);
 
-    const addTask = (title, details, expiry_date, completion) => {
+    const addTask = (title, details, expiry_date, completion, rating) => {
         setTasks([
             ...tasks,
             {
@@ -14,7 +14,8 @@ export default function TaskProvider({children}) {
                 title,
                 details,
                 expiry_date,
-                completion
+                completion,
+                rating
             }
         ]);
     }
